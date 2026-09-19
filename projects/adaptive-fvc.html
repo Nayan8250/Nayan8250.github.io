@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Adaptive Dual-Input F-to-V Converter | Nayan Das</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1020;
+      color: #e8ecf3;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 25px;
+    }
+
+    a {
+      color: #79a9ff;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 45px;
+      color: #79a9ff;
+    }
+
+    p {
+      color: #c2cad8;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #18233a;
+      border: 1px solid #31486f;
+      padding: 6px 12px;
+      margin: 5px 5px 5px 0;
+      border-radius: 6px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <a class="back" href="../index.html">← Back to Home</a>
+
+  <h1>Adaptive Dual-Input Frequency-to-Voltage Converter</h1>
+
+  <p>
+    FPGA implementation on the Red Pitaya STEMlab 125-14 for real-time,
+    signed frequency-difference measurement and conversion into a
+    proportional analog voltage.
+  </p>
+
+  <div>
+    <span class="tag">Red Pitaya</span>
+    <span class="tag">FPGA</span>
+    <span class="tag">SystemVerilog</span>
+    <span class="tag">Frequency Measurement</span>
+    <span class="tag">Digital Control</span>
+  </div>
+
+  <h2>Project Overview</h2>
+
+  <p>
+    This project was developed as a faster alternative to a conventional
+    reciprocal frequency-counter-based frequency-to-voltage converter.
+    Two input signals are measured simultaneously and their signed
+    frequency difference is calculated in real time.
+  </p>
+
+  <p>
+    The measured frequency error is
+  </p>
+
+  <p>
+    Δf = f<sub>IN2</sub> − f<sub>IN1</sub>
+  </p>
+
+  <p>
+    This signed frequency difference is converted into a proportional
+    DAC voltage and provided at the Red Pitaya analog output.
+  </p>
+
+  <h2>Hardware</h2>
+
+  <p>
+    Red Pitaya STEMlab 125-14, two signal generators, oscilloscope,
+    and FPGA logic implemented in Vivado.
+  </p>
+
+  <h2>FPGA Architecture</h2>
+
+  <p>
+    Architecture diagram and implementation details will be added here.
+  </p>
+
+  <h2>Experimental Results</h2>
+
+  <p>
+    Frequency-versus-voltage and frequency-versus-phase measurements
+    will be added here.
+  </p>
+
+  <h2>Source Code</h2>
+
+  <p>
+    FPGA RTL and project files will be linked here after the public
+    project repository is prepared.
+  </p>
+
+</div>
+
+</body>
+</html>
