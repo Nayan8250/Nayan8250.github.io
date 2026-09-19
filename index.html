@@ -3,50 +3,316 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Nayan Das | Physics & Instrumentation</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1020;
+      color: #e8ecf3;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #11182b;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #24304d;
+    }
+
+    nav h2 {
+      color: #ffffff;
+    }
+
+    nav a {
+      color: #c8d4f0;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    nav a:hover {
+      color: #6ea8ff;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 10%;
+      background:
+        radial-gradient(circle at top right, #17315f, transparent 35%),
+        #0b1020;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h3 {
+      font-size: 1.5rem;
+      color: #79a9ff;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      font-size: 1.15rem;
+      color: #bec8db;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      margin-right: 12px;
+      padding: 12px 22px;
+      background: #2463eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border: 1px solid #5573a8;
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+    }
+
+    .about p,
+    .research p {
+      max-width: 900px;
+      color: #bdc7d9;
+    }
+
+    .projects {
+      background: #0f1628;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #151f35;
+      border: 1px solid #263758;
+      padding: 25px;
+      border-radius: 12px;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #4f84e8;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .card p {
+      color: #aebbd0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #080c16;
+      color: #8c98ad;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      nav div {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>Nayan Das</h1>
+<nav>
+  <h2>Nayan Das</h2>
 
-  <p>
-    MSc Physics | Astrophysics | Precision Interferometry | FPGA Instrumentation
-  </p>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-  <hr>
+
+<section class="hero">
+
+  <div>
+
+    <h1>Nayan Das</h1>
+
+    <h3>
+      Physics • Astrophysics • Precision Instrumentation • FPGA Control
+    </h3>
+
+    <p>
+      MSc Physics student working on precision interferometry,
+      FPGA-based control systems, Red Pitaya instrumentation,
+      phase-locked loops, frequency measurement,
+      and laser noise characterization.
+    </p>
+
+    <a class="button"
+       href="https://github.com/Nayan8250">
+       GitHub
+    </a>
+
+    <a class="button secondary"
+       href="#projects">
+       View Projects
+    </a>
+
+  </div>
+
+</section>
+
+
+<section id="about" class="about">
 
   <h2>About Me</h2>
 
   <p>
-    I am an MSc Physics student working on precision interferometry,
-    FPGA-based control systems, Red Pitaya instrumentation,
-    phase-locked loops, frequency measurement, and laser noise characterization.
+    I am interested in experimental physics, precision measurement,
+    interferometry, control systems, FPGA-based instrumentation,
+    gravitational-wave instrumentation, and astrophysics.
+
+    My work includes the development and testing of digital signal
+    processing and control systems using the Red Pitaya STEMlab platform.
   </p>
 
-  <h2>Projects</h2>
+</section>
 
-  <ul>
-    <li>Laser Relative Intensity Noise Measurement</li>
-    <li>Red Pitaya FPGA Phase-Locked Loop</li>
-    <li>IQ Demodulator and PID Controller</li>
-    <li>Frequency-to-Voltage Converter</li>
-    <li>Adaptive Dual-Input Frequency-to-Voltage Converter</li>
-    <li>Wideband Beat-Frequency Monitoring</li>
-  </ul>
+
+<section id="projects" class="projects">
+
+  <h2>Selected Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="card">
+      <h3>Laser RIN Measurement</h3>
+      <p>
+        Measurement and analysis of laser relative intensity noise
+        using Red Pitaya, photodetectors, PSD estimation and
+        multi-band spectral analysis.
+      </p>
+    </div>
+
+
+    <div class="card">
+      <h3>FPGA Phase-Locked Loop</h3>
+      <p>
+        FPGA-based PLL development using IQ demodulation,
+        digital filtering, PID feedback and Red Pitaya.
+      </p>
+    </div>
+
+
+    <div class="card">
+      <h3>IQ Demodulator & PID</h3>
+      <p>
+        Custom SystemVerilog implementation of IQ signal processing
+        and digital control for precision frequency and phase experiments.
+      </p>
+    </div>
+
+
+    <div class="card">
+      <h3>Frequency-to-Voltage Converter</h3>
+      <p>
+        FPGA-based frequency measurement and conversion of
+        frequency information into a proportional DAC voltage.
+      </p>
+    </div>
+
+
+    <div class="card">
+      <h3>Adaptive Dual-Input F-to-V Converter</h3>
+      <p>
+        Dual-input signed frequency-difference measurement system
+        for high-speed frequency-error detection and feedback control.
+      </p>
+    </div>
+
+
+    <div class="card">
+      <h3>Wideband Beat-Frequency Monitoring</h3>
+      <p>
+        Development of a wideband FPGA monitoring path for observing
+        beat frequencies from low frequency to the MHz range.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="research" class="research">
 
   <h2>Research Interests</h2>
 
   <p>
-    Gravitational-wave instrumentation, precision measurement,
-    FPGA control systems, interferometry, lasers, and astrophysics.
+    Gravitational-wave instrumentation, precision interferometry,
+    laser stabilization, FPGA-based digital control,
+    phase-locked loops, signal processing,
+    astronomical instrumentation and astrophysics.
   </p>
+
+</section>
+
+
+<section id="contact">
 
   <h2>Contact</h2>
 
   <p>
-    GitHub: Nayan8250
+    GitHub:
+    <a href="https://github.com/Nayan8250"
+       style="color:#79a9ff;">
+       github.com/Nayan8250
+    </a>
   </p>
+
+</section>
+
+
+<footer>
+  © 2026 Nayan Das
+</footer>
 
 </body>
 </html>
